@@ -1,0 +1,78 @@
+/* ===== GENERAL STYLING ===== */
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  color: #0077cc;
+}
+
+/* ===== ANIMATION BOX ===== */
+#box {
+  width: 100px;
+  height: 100px;
+  background: tomato;
+  margin: 20px auto;
+  border-radius: 10px;
+  transition: transform 0.5s ease; /* smooth transition */
+}
+
+/* ===== ANIMATION CLASS ===== */
+.move {
+  animation: moveBox 2s forwards;
+}
+
+/* Keyframes animation for the box */
+@keyframes moveBox {
+  0% { transform: translateX(0); background: tomato; }
+  50% { transform: translateX(150px) rotate(180deg); background: gold; }
+  100% { transform: translateX(0) rotate(360deg); background: limegreen; }
+}
+
+/* ===== FORM STYLING ===== */
+form {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 300px;
+  margin: 20px auto;
+}
+
+input {
+  display: block;
+  width: 90%;
+  padding: 8px;
+  margin: 10px auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus {
+  border-color: #0077cc;
+  box-shadow: 0 0 6px rgba(0,119,204,0.5);
+  outline: none;
+}
+
+button {
+  background: #0077cc;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #005fa3;
+}
+
+#formMessage {
+  margin-top: 10px;
+  font-weight: bold;
+}
